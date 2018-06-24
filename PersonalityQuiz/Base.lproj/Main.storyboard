@@ -236,6 +236,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Nzb-4i-81R"/>
                     <connections>
+                        <outlet property="multipleAnswerSV" destination="63h-TQ-5j8" id="EAn-cW-oQc"/>
+                        <outlet property="rangeAnswerSV" destination="Qu3-GN-Xcv" id="XPx-hG-Veg"/>
+                        <outlet property="singleAnswerSV" destination="AMW-ec-Atq" id="uip-7j-VdU"/>
                         <segue destination="40l-40-qmM" kind="show" identifier="ResultsSegue" id="sCQ-cZ-dMM"/>
                     </connections>
                 </viewController>

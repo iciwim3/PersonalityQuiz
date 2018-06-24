@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		433EC69820DFDD4300AA4063 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433EC69720DFDD4300AA4063 /* QuestionData.swift */; };
 		43F9A78220DF0A33002955BA /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F9A78120DF0A33002955BA /* QuestionViewController.swift */; };
 		43F9A78420DF0A52002955BA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F9A78320DF0A52002955BA /* ResultsViewController.swift */; };
 		43F9CBED20DDFE29000AA093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F9CBEC20DDFE29000AA093 /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		433EC69720DFDD4300AA4063 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		43F9A78120DF0A33002955BA /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		43F9A78320DF0A52002955BA /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		43F9CBE920DDFE29000AA093 /* PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		433EC69920DFE04E00AA4063 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				43F9A78120DF0A33002955BA /* QuestionViewController.swift */,
+				43F9A78320DF0A52002955BA /* ResultsViewController.swift */,
+				43F9CBEE20DDFE29000AA093 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		433EC69A20DFE05400AA4063 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		433EC69B20DFE05A00AA4063 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				433EC69720DFDD4300AA4063 /* QuestionData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		43F9CBE020DDFE29000AA093 = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +87,11 @@
 		43F9CBEB20DDFE29000AA093 /* PersonalityQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				433EC69B20DFE05A00AA4063 /* Model */,
+				433EC69A20DFE05400AA4063 /* View */,
+				433EC69920DFE04E00AA4063 /* Controller */,
 				43F9CBFE20DE02C9000AA093 /* Identifiers.swift */,
 				43F9CBEC20DDFE29000AA093 /* AppDelegate.swift */,
-				43F9A78120DF0A33002955BA /* QuestionViewController.swift */,
-				43F9A78320DF0A52002955BA /* ResultsViewController.swift */,
-				43F9CBEE20DDFE29000AA093 /* MainViewController.swift */,
 				43F9CBF020DDFE29000AA093 /* Main.storyboard */,
 				43F9CBF320DDFE2A000AA093 /* Assets.xcassets */,
 				43F9CBF520DDFE2A000AA093 /* LaunchScreen.storyboard */,
@@ -147,6 +174,7 @@
 				43F9CBEF20DDFE29000AA093 /* MainViewController.swift in Sources */,
 				43F9CBFF20DE02C9000AA093 /* Identifiers.swift in Sources */,
 				43F9A78220DF0A33002955BA /* QuestionViewController.swift in Sources */,
+				433EC69820DFDD4300AA4063 /* QuestionData.swift in Sources */,
 				43F9A78420DF0A52002955BA /* ResultsViewController.swift in Sources */,
 				43F9CBED20DDFE29000AA093 /* AppDelegate.swift in Sources */,
 			);
