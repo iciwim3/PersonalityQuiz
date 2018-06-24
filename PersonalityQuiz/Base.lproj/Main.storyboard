@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -90,7 +91,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-ec-Atq" userLabel="Single Answer SV">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-ec-Atq" userLabel="Single Answer SV">
                                 <rect key="frame" x="16" y="164" width="46" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -206,23 +207,32 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUB-9Y-q3S">
+                                <rect key="frame" x="0.0" y="84" width="375" height="37.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dtq-jn-hgX">
+                                <rect key="frame" x="16" y="645" width="343" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="jUB-9Y-q3S" firstAttribute="leading" secondItem="pOY-fr-uEj" secondAttribute="leading" id="01j-TK-AXj"/>
                             <constraint firstItem="Qu3-GN-Xcv" firstAttribute="leading" secondItem="pOY-fr-uEj" secondAttribute="leading" id="38F-z7-9YA"/>
+                            <constraint firstItem="Dtq-jn-hgX" firstAttribute="leading" secondItem="qgP-AQ-HNK" secondAttribute="leadingMargin" id="8YB-y9-1f9"/>
+                            <constraint firstItem="pOY-fr-uEj" firstAttribute="bottom" secondItem="Dtq-jn-hgX" secondAttribute="bottom" constant="20" id="Jbb-xJ-X6h"/>
                             <constraint firstItem="pOY-fr-uEj" firstAttribute="trailing" secondItem="Qu3-GN-Xcv" secondAttribute="trailing" id="MLY-kW-Kz8"/>
                             <constraint firstItem="Qu3-GN-Xcv" firstAttribute="centerY" secondItem="qgP-AQ-HNK" secondAttribute="centerY" id="Rbm-TB-zZD"/>
                             <constraint firstItem="63h-TQ-5j8" firstAttribute="leading" secondItem="pOY-fr-uEj" secondAttribute="leading" id="V9D-xv-4ma"/>
                             <constraint firstItem="63h-TQ-5j8" firstAttribute="centerY" secondItem="qgP-AQ-HNK" secondAttribute="centerY" id="Vtu-9q-Ukd"/>
+                            <constraint firstItem="pOY-fr-uEj" firstAttribute="trailing" secondItem="jUB-9Y-q3S" secondAttribute="trailing" id="X3l-5F-TcV"/>
+                            <constraint firstItem="jUB-9Y-q3S" firstAttribute="top" secondItem="pOY-fr-uEj" secondAttribute="top" constant="20" id="l96-oo-GoW"/>
                             <constraint firstItem="pOY-fr-uEj" firstAttribute="trailing" secondItem="63h-TQ-5j8" secondAttribute="trailing" id="lpJ-WI-xka"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Dtq-jn-hgX" secondAttribute="trailing" id="nmV-XG-CUf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pOY-fr-uEj"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="AMW-ec-Atq"/>
-                                <exclude reference="63h-TQ-5j8"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Nzb-4i-81R"/>
                     <connections>
