@@ -91,24 +91,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-ec-Atq" userLabel="Single Answer SV">
-                                <rect key="frame" x="16" y="164" width="46" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-ec-Atq" userLabel="Single Answer SV">
+                                <rect key="frame" x="16" y="243.5" width="343" height="180"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX2-FJ-Tn5">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX2-FJ-Tn5">
+                                        <rect key="frame" x="148.5" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-FL-W0i">
-                                        <rect key="frame" x="0.0" y="50" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-FL-W0i">
+                                        <rect key="frame" x="148.5" y="50" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2p-sL-mvR">
-                                        <rect key="frame" x="0.0" y="100" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2p-sL-mvR">
+                                        <rect key="frame" x="148.5" y="100" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itb-Nl-cpa">
-                                        <rect key="frame" x="0.0" y="150" width="46" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itb-Nl-cpa">
+                                        <rect key="frame" x="148.5" y="150" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
@@ -227,18 +226,33 @@
                             <constraint firstItem="Qu3-GN-Xcv" firstAttribute="centerY" secondItem="qgP-AQ-HNK" secondAttribute="centerY" id="Rbm-TB-zZD"/>
                             <constraint firstItem="63h-TQ-5j8" firstAttribute="leading" secondItem="pOY-fr-uEj" secondAttribute="leading" id="V9D-xv-4ma"/>
                             <constraint firstItem="63h-TQ-5j8" firstAttribute="centerY" secondItem="qgP-AQ-HNK" secondAttribute="centerY" id="Vtu-9q-Ukd"/>
+                            <constraint firstItem="pOY-fr-uEj" firstAttribute="trailing" secondItem="AMW-ec-Atq" secondAttribute="trailing" constant="16" id="WUm-BD-nfz"/>
                             <constraint firstItem="pOY-fr-uEj" firstAttribute="trailing" secondItem="jUB-9Y-q3S" secondAttribute="trailing" id="X3l-5F-TcV"/>
+                            <constraint firstItem="AMW-ec-Atq" firstAttribute="centerY" secondItem="qgP-AQ-HNK" secondAttribute="centerY" id="ZPe-Ge-gaQ"/>
                             <constraint firstItem="jUB-9Y-q3S" firstAttribute="top" secondItem="pOY-fr-uEj" secondAttribute="top" constant="20" id="l96-oo-GoW"/>
                             <constraint firstItem="pOY-fr-uEj" firstAttribute="trailing" secondItem="63h-TQ-5j8" secondAttribute="trailing" id="lpJ-WI-xka"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dtq-jn-hgX" secondAttribute="trailing" id="nmV-XG-CUf"/>
+                            <constraint firstItem="AMW-ec-Atq" firstAttribute="leading" secondItem="pOY-fr-uEj" secondAttribute="leading" constant="16" id="xNf-oa-ZUC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pOY-fr-uEj"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nzb-4i-81R"/>
                     <connections>
                         <outlet property="multipleAnswerSV" destination="63h-TQ-5j8" id="EAn-cW-oQc"/>
+                        <outlet property="multipleLabel1" destination="myN-Kq-xL1" id="V32-fU-9mz"/>
+                        <outlet property="multipleLabel2" destination="h9l-uL-KDX" id="aiH-8K-a7j"/>
+                        <outlet property="multipleLabel3" destination="kvD-Zv-P6g" id="vNl-w5-sm4"/>
+                        <outlet property="multipleLabel4" destination="dJ4-k0-FSv" id="Sjk-pf-ylY"/>
+                        <outlet property="questionLabel" destination="jUB-9Y-q3S" id="CjU-XC-P2c"/>
+                        <outlet property="questionProgressView" destination="Dtq-jn-hgX" id="w7z-uD-47x"/>
                         <outlet property="rangeAnswerSV" destination="Qu3-GN-Xcv" id="XPx-hG-Veg"/>
+                        <outlet property="rangedLabel1" destination="UM5-xT-pgb" id="jdA-pG-NT3"/>
+                        <outlet property="rangedLabel2" destination="dJc-fj-97I" id="JCd-1r-9qh"/>
                         <outlet property="singleAnswerSV" destination="AMW-ec-Atq" id="uip-7j-VdU"/>
+                        <outlet property="singleButton1" destination="OX2-FJ-Tn5" id="uBU-32-kT0"/>
+                        <outlet property="singleButton2" destination="1kZ-FL-W0i" id="76S-QC-S0R"/>
+                        <outlet property="singleButton3" destination="Y2p-sL-mvR" id="En0-hy-Zzx"/>
+                        <outlet property="singleButton4" destination="itb-Nl-cpa" id="tN6-I5-rRU"/>
                         <segue destination="40l-40-qmM" kind="show" identifier="ResultsSegue" id="sCQ-cZ-dMM"/>
                     </connections>
                 </viewController>
