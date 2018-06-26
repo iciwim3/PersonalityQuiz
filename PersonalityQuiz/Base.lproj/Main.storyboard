@@ -97,18 +97,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OX2-FJ-Tn5">
                                         <rect key="frame" x="148.5" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0mj-8j-6aP" eventType="touchUpInside" id="ZBC-1G-UBD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kZ-FL-W0i">
                                         <rect key="frame" x="148.5" y="50" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0mj-8j-6aP" eventType="touchUpInside" id="wEI-Y0-rbc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2p-sL-mvR">
                                         <rect key="frame" x="148.5" y="100" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0mj-8j-6aP" eventType="touchUpInside" id="iVQ-uS-Wec"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itb-Nl-cpa">
                                         <rect key="frame" x="148.5" y="150" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="0mj-8j-6aP" eventType="touchUpInside" id="eU8-WW-VYe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -174,6 +186,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZGD-hf-T7r">
                                         <rect key="frame" x="0.0" y="204" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="0mj-8j-6aP" eventType="touchUpInside" id="2JU-Bb-btI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -203,6 +218,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uba-W3-W4c">
                                         <rect key="frame" x="0.0" y="90.5" width="375" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="0mj-8j-6aP" eventType="touchUpInside" id="d9A-fJ-nDb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -238,6 +256,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Nzb-4i-81R"/>
                     <connections>
+                        <outlet property="multiSwitch1" destination="1jh-Xt-Tw0" id="aGf-7h-Cod"/>
+                        <outlet property="multiSwitch2" destination="Vr5-gA-gbc" id="srK-pU-Fac"/>
+                        <outlet property="multiSwitch3" destination="Ob6-cu-1hI" id="PBZ-Hl-s4P"/>
+                        <outlet property="multiSwitch4" destination="Esx-9p-vAC" id="eMg-Ow-MF7"/>
                         <outlet property="multipleAnswerSV" destination="63h-TQ-5j8" id="EAn-cW-oQc"/>
                         <outlet property="multipleLabel1" destination="myN-Kq-xL1" id="V32-fU-9mz"/>
                         <outlet property="multipleLabel2" destination="h9l-uL-KDX" id="aiH-8K-a7j"/>
@@ -248,6 +270,7 @@
                         <outlet property="rangeAnswerSV" destination="Qu3-GN-Xcv" id="XPx-hG-Veg"/>
                         <outlet property="rangedLabel1" destination="UM5-xT-pgb" id="jdA-pG-NT3"/>
                         <outlet property="rangedLabel2" destination="dJc-fj-97I" id="JCd-1r-9qh"/>
+                        <outlet property="rangedSlider" destination="Uoz-Um-DdE" id="Vmh-6i-7s7"/>
                         <outlet property="singleAnswerSV" destination="AMW-ec-Atq" id="uip-7j-VdU"/>
                         <outlet property="singleButton1" destination="OX2-FJ-Tn5" id="uBU-32-kT0"/>
                         <outlet property="singleButton2" destination="1kZ-FL-W0i" id="76S-QC-S0R"/>
