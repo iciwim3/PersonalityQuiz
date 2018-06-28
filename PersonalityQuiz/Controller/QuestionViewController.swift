@@ -179,6 +179,13 @@ class QuestionViewController: UIViewController {
         rangedLabel1.text = answers.first?.text
         rangedLabel2.text = answers.last?.text
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == GO_TO_RESULTS_VC {
+            let resultsVC = segue.destination as! ResultsViewController
+            resultsVC.responses = answersChosen
+        }
+    }
 
 }
 
