@@ -43,7 +43,6 @@ class QuestionViewController: UIViewController {
         super.viewDidLoad()
         
         updateUI()
-        
     }
     
     var questions: [Question] = [
